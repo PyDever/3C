@@ -6,13 +6,13 @@
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 <br>
 
-* ***IP address and MAC address!***
-* ***OS and device details!***
-* ***TCP port details!***
-
 # AirCat
 Send your AirCat through the sky to prowl around 
 and give you some information. 
+
+* device addresses
+* port information
+* OS and device details
 
 ## Installation 
 Make sure to have `scapy` installed already.
