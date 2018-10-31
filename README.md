@@ -11,3 +11,12 @@
 Send your AirCat through the sky to prowl around 
 and give you some information. 
 
+## Requirements
+* `scapy` - packet formation library
+* `ifaddr` - communicate with your interfaces
+
+
+```shell
+$ git clone https://github.com/PyDever/AirCat
+$ python aircat
+```
