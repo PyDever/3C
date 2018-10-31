@@ -70,7 +70,7 @@ elif len(args) == 2:
 	else:
 		print(usage)
 
-interface = IFACES.dev_from_index(3).name
+interface = input('[*] Please enter interface name: ')
 
 # sanity check for arguments
 '''
