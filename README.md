@@ -7,11 +7,10 @@
 <br>
 
 # 3C
-3C will sneak around and poison your ARP cache.
-
-* list devices on your AP `python clients -t <range>`
-* spoof a device on your AP `python spoof -t <target>`
-
+3C allows you to dominate your access point. 
+```shell
+$ python 3C -t <IP range>
+```
 
 ## Installation 
 Make sure to have `scapy`, `wifi`, and `wireless` installed. Also, run `iptables` to disable
