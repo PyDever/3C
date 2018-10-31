@@ -19,7 +19,7 @@ Currently, AirCat only works on MAC and Linux.
 Make sure to have `scapy` installed as well as `iptables`. 
 After having installed `iptables`, run this command:
 ```
-$ iptables -I OUTPUT -p tcp --tcp-flags ALL RST,ACK -j DROP
+$ iptables -I OUTPUT -p tcp --tcp-flags ALL RST -j DROP
 ```
 Now download this repository.
 ```shell
