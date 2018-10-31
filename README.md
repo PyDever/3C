@@ -24,7 +24,11 @@ $ git clone https://github.com/PyDever/AirCat
 For help, run `python aircat --help`. The following commands
 are currently supported by your AirCat.
 
-* `python aircat <IP range>` - normal ARP scan to list clients connected to your access point or router
-* `python aircat <IP range> -os` - include OS fingerprinting in your scan (`--os-fp` works also)
-* `python aircat --help` - display this information in the command line
+`python aircat <IP range>` - normal ARP scan to list clients connected to your access point or router.
+`IP range` might look like `192.168.200.0/24`, which would return all 255 clients that are connected
+to the `192.168.200.` subnet. It might be `192.168.300.0/12` which will display 130 clients that are
+connected to the `192.168.300.` subnet. 
+
+ `python aircat -os <IP>` - return OS of client `IP`
+`python aircat --help` - show standard command line help page
 
