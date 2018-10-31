@@ -21,3 +21,8 @@ automatic kernel RST forwarding, or else `osfp` will be useless.
 ```shell
 $ git clone <this repo>
 ```
+
+***TODO***
+* add device port/OS information scanner
+* add offensive toolset (jammers, spoofers and flooders)
+
