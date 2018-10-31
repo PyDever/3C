@@ -16,7 +16,7 @@
 
 
 ## Installation 
-Make sure to have `scapy` and `wifi` installed. Also, run `iptables` to disable
+Make sure to have `scapy`, `wifi`, and `wireless` installed. Also, run `iptables` to disable
 automatic kernel RST forwarding, or else `osfp` will be useless. 
 ```shell
 $ git clone <this repo>
