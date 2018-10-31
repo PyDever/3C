@@ -15,15 +15,14 @@ and give you some information.
 * OS and device details
 
 ## Installation 
-Make sure to have `scapy` installed already.
+Currently, AirCat only works on MAC and Linux.
+Make sure to have `scapy` installed as well as `iptables`. 
+After having installed `iptables`, run this command:
+```
+$ iptables -I OUTPUT -p tcp --tcp-flags ALL RST,ACK -j DROP
+```
+Now download this repository.
 ```shell
 $ git clone https://github.com/PyDever/AirCat
 ```
-Run this command in Linux (VERY IMPORTANT):
-```shell
-$ iptables -I OUTPUT -p tcp --tcp-flags ALL RST,ACK -j DROP
-```
-```shell
-$ python aircat --help
-```
-
+Now you should be good to go! `$ python aircat --help`
