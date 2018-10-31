@@ -70,7 +70,7 @@ elif len(args) == 2:
 	else:
 		print(usage)
 
-interface = input('[*] Please enter interface name: ')
+interface = 'wlp4s0'
 
 # sanity check for arguments
 '''
