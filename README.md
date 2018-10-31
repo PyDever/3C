@@ -19,8 +19,11 @@ Make sure to have `scapy` installed already.
 ```shell
 $ git clone https://github.com/PyDever/AirCat
 ```
-
-## Usage Instructions
-For help, run `python aircat --help`. The following commands
-are currently supported by your AirCat.
+Run this command in Linux (VERY IMPORTANT):
+```shell
+$ iptables -I OUTPUT -p tcp --tcp-flags ALL RST,ACK -j DROP
+```
+```shell
+$ python aircat --help
+```
 
