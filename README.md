@@ -15,6 +15,9 @@ and give you some information.
 * `scapy` - packet formation library
 * `ifaddr` - communicate with your interfaces
 
+```shell
+$ pip install scapy ifaddr
+```
 
 ```shell
 $ git clone https://github.com/PyDever/AirCat
