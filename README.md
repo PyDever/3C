@@ -7,7 +7,7 @@
 <br>
 
 # 3C
-3C allows you to dominate your access point. 
+3C allows you to dominate your access point with ARP spoofs.
 ```shell
 $ python 3C -t <IP range>
 ```
