@@ -10,7 +10,7 @@
 3C will sneak around and poison your ARP cache.
 
 * list devices on your AP `python clients -t <range>`
-* spoof a device on your AP `python spoof -t <target>'
+* spoof a device on your AP `python spoof -t <target>`
 
 
 ## Installation 
