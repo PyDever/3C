@@ -16,7 +16,8 @@ and give you some information.
 * OS and device details (nyi)
 
 ## Installation 
-Make to have `scapy` and `wifi` installed.
+Make sure to have `scapy` and `wifi` installed. Also, run `iptables` to disable
+automatic kernel RST forwarding, or else `aircat_os` will be useless. 
 ```shell
 $ git clone <this repo>
 ```
