@@ -7,12 +7,10 @@
 <br>
 
 # 3C
-3C will sneak around and grab some handy network information.
+3C will sneak around and poison your ARP cache.
 
-* device addresses `python clients -t <range>`
-* nearest access points `python waps -i <interface>`
-* AP port/OS information `python apinfo -t <gateway>`
-* device port/OS information (not yet implemented)
+* list devices on your AP `python clients -t <range>`
+* spoof a device on your AP `python spoof -t <target>'
 
 
 ## Installation 
