@@ -10,19 +10,13 @@
 Send your AirCat through the sky to prowl around 
 and give you some information. 
 
-* device addresses
-* port information
-* OS and device details
+* device addresses `python aircat_clients -t <range>`
+* nearest access points `python aircat_waps -i <interface>`
+* port information (nyi)
+* OS and device details (nyi)
 
 ## Installation 
-Currently, AirCat only works on MAC and Linux.
-Make sure to have `scapy` installed as well as `iptables`. 
-After having installed `iptables`, run this command:
-```
-$ iptables -I OUTPUT -p tcp --tcp-flags ALL RST -j DROP
-```
-Now download this repository.
+Make to have `scapy` and `wifi` installed.
 ```shell
-$ git clone https://github.com/PyDever/AirCat
+$ git clone <this repo>
 ```
-Now you should be good to go! `$ python aircat --help`
