@@ -15,13 +15,13 @@ def get_arguments():
 # carefully craft ARP ping packet with datalink access
 options = get_arguments()
 ip_address = options.target
-pkt = ARP(pdst=ip_address)
-broadcast = Ether(dst="ff:ff:ff:ff:ff:ff")
+arp_header = ARP(pdst=ip_address)
+ether_header = Ether(dst="ff:ff:ff:ff:ff:ff")
 
 try:
 	# send the ARP ping packt crafted above
 	print("\n[*] Broadcasting packet...")
-	answers = srp(broadcast/pkt, timeout=1, verbose=False)[0]
+	answers = srp(ether_header/arp_header, timeout=1, verbose=False)[0]
 
 except KeyboardInterrupt as interrupt:
 	print("[!] Quitting...")
