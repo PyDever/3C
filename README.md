@@ -6,18 +6,18 @@
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 <br>
 
-# AirCat
-Send your AirCat through the sky to prowl around 
-and give you some information. 
+# 3C
+3C will sneak around and grab some handy network information.
 
-* device addresses `python aircat_clients -t <range>`
-* nearest access points `python aircat_waps -i <interface>`
+* device addresses `python clients -t <range>`
+* nearest access points `python waps -i <interface>`
+* AP information `python apinfo -t <gateway>`
 * port information (nyi)
 * OS and device details (nyi)
 
 ## Installation 
 Make sure to have `scapy` and `wifi` installed. Also, run `iptables` to disable
-automatic kernel RST forwarding, or else `aircat_os` will be useless. 
+automatic kernel RST forwarding, or else `osfp` will be useless. 
 ```shell
 $ git clone <this repo>
 ```
