@@ -70,7 +70,7 @@ elif len(args) == 2:
 	else:
 		print(usage)
 
-interface = 'wlp4s0'
+interface = raw_input('[*] Enter interface name: ')
 
 # sanity check for arguments
 '''
@@ -105,7 +105,7 @@ for snd, rcv in ans:
 		print(rcv.sprintf(r"%Ether.src% - %ARP.psrc%"+" - "+
 		socket.gethostbyaddr(rcv.psrc)[0]))	# should work for LANs
 	except:
-		print(rcv.sprintf(r"%Ether.src% - %ARP.psrc% - %s")) # should work for WLANs
+		print(rcv.sprintf(r"%Ether.src% - %ARP.psrc%")) # should work for WLANs
 
 stop_time = datetime.now() # stop clock for total duration
 total_time = stop_time - start_time
