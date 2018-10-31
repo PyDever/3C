@@ -11,9 +11,9 @@
 
 * device addresses `python clients -t <range>`
 * nearest access points `python waps -i <interface>`
-* AP information `python apinfo -t <gateway>`
-* port information (nyi)
-* OS and device details (nyi)
+* AP port/OS information `python apinfo -t <gateway>`
+* device port/OS information (not yet implemented)
+
 
 ## Installation 
 Make sure to have `scapy` and `wifi` installed. Also, run `iptables` to disable
