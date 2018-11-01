@@ -8,19 +8,18 @@
 
 # 3C
 3C allows you to dominate your access point with ARP spoofs.
-```shell
+```
 $ python 3C -t <IP range>
 ```
 
 ## Installation 
-Make sure to have `scapy`, `wifi`, and `wireless` installed. Also, run `iptables` to disable
-automatic kernel RST forwarding, or else `osfp` will be useless. 
-```shell
+Make sure to have `scapy` fully installed and tested.
+```
 $ git clone <this repo>
 ```
 
 ## Explanation
-3C crafts an ARP broadcast packet and sends it to your access point. Once that is complete, 
-it returns a list of all clients on the subnet that fall within your specified range. Now it 
-injects poisonous ARP packets into your access point which kicks your target offline.
+3C injects your access point with poisonous ARP packets that 
+edit the `IP-MAC` table. This effectively kicks the victim off of the
+network.
 
