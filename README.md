@@ -16,6 +16,7 @@ from `scan` to find the victim's IP and MAc.
 ```
 $ python poison -t <victim IP> -m <victim MAC>
 ```
+To quit the poisonous injection, do `ctrl+c`.
 
 ## Installation 
 Make sure to have `scapy` fully installed and tested.
