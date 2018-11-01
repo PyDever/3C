@@ -6,7 +6,6 @@
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 <br>
 
-# 3C
 3C allows you to dominate your access point with ARP spoofs.
 ```
 $ python 3C -t <IP range>
