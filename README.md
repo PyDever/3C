@@ -6,8 +6,7 @@
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 <br>
 
-3C allows you to dominate your access point with ARP spoofs.
-First, tap your access point to get a list of all connected clients:
+3C gives you an arsenal of Wi-Fi tools to perform DDoS, ARP poisons, and more. 
 ```
 $ python scan -r <IP range>
 ```
