@@ -18,6 +18,14 @@ $ python poison -t <victim IP> -m <victim MAC>
 ```
 To quit the poisonous injection, do `ctrl+c`.
 
+***New feature!*** (v2.0 update)
+3C can now perform SYN flood DDoS attacks.
+```
+$ python flood -t <victim IP> -p <port> -ttl <time-to-live> -l <payload>
+```
+It will take out a port in about 3-5 minutes. It is not 
+multi-threaded yet.
+
 ## Installation 
 Make sure to have `scapy` fully installed and tested.
 ```
