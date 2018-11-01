@@ -7,8 +7,14 @@
 <br>
 
 3C allows you to dominate your access point with ARP spoofs.
+First, tap your access point to get a list of all connected clients:
 ```
-$ python 3C -t <IP range>
+$ python scan -r <IP range>
+```
+Next, you can use the `poison` command to perform the kick. Use the output
+from `scan` to find the victim's IP and MAc.
+```
+$ python poison -t <victim IP> -m <victim MAC>
 ```
 
 ## Installation 
