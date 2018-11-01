@@ -29,7 +29,7 @@ Make sure to have `scapy` fully installed and tested.
 $ git clone <this repo>
 ```
 
-## Explanation
+### ARP Poison Explanation
 3C injects your access point with venomous ARP packets that kick the victim offline. 
 ```
                          (no connection)
