@@ -18,7 +18,9 @@ $ git clone <this repo>
 ```
 
 ## Explanation
-3C injects your access point with poisonous ARP packets that 
-edit the `IP-MAC` table. This effectively kicks the victim off of the
-network.
+3C injects your access point with venomous ARP packets that kick the victim offline. 
+```
+                         (no connection)
+You -----[3C_pkt]-----> AP -----X-----> victim
+```
 
