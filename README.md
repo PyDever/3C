@@ -19,7 +19,7 @@ $ python poison -t <victim IP> -m <victim MAC>
 ***New feature!*** (v2.0 update)
 3C can now perform SYN flood DDoS attacks.
 ```
-$ python flood -t <victim IP> -p <port> -ttl <time-to-live> -l <payload>
+$ python flood -t <victim IP> -p <port> -l <payload>
 ```
 It will take out a port in about 3-5 minutes. It is not 
 multi-threaded yet.
