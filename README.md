@@ -11,13 +11,11 @@ First, tap your access point to get a list of all connected clients:
 ```
 $ python scan -r <IP range>
 ```
-Next, you can use the `poison` command to perform the kick. Use the output
-from `scan` to find the victim's IP and MAc.
 ```
 $ python poison -t <victim IP> -m <victim MAC>
 ```
-To quit the poisonous injection, do `ctrl+c`.
 
+<br>
 ***New feature!*** (v2.0 update)
 3C can now perform SYN flood DDoS attacks.
 ```
