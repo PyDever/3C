@@ -24,6 +24,14 @@ $ python flood -t <victim IP> -p <port> -l <payload>
 It will take out a port in about 3-5 minutes. It is not 
 multi-threaded yet.
 
+***New feature!*** (v2.1 udate)
+3C can now perform HTTP hammer DDoS attacks.
+```
+$ python hammer -t <victim IP> -l <payload>
+```
+It will take down a normal website in about 5-10 minutes.
+As with SYN, it is not multi-threaded yet. 
+
 ## Installation 
 Make sure to have `scapy` fully installed and tested.
 ```
