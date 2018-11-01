@@ -14,7 +14,7 @@ $ python scan -r <IP range>
 ```
 $ python poison -t <victim IP> -m <victim MAC>
 ```
-<br>
+<hr>
 
 ***New feature!*** (v2.0 update)
 3C can now perform SYN flood DDoS attacks.
