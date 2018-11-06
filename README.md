@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 <br>
 
+***All included scripts are illegal to run without permission of target.***
+
 3C gives you an arsenal of Wi-Fi tools to perform DDoS, ARP poisons, and more. 
 ```
 $ python scan -r <IP range>
