@@ -25,6 +25,23 @@ $ python flood -t <victim IP> -p <port> -l <payload>
 It will take out a port in about 3-5 minutes. It is not 
 multi-threaded yet.
 
+***New feature!*** (v2.2 update)
+3C can now perform Nmap-esk port/OS scans.
+```
+$ python map -t <victim IP> -p <port range>
+```
+Port range should look like `0-80` or maybe `22-1024`.
+Here is a scan I did on my home router:
+```
+Starting scan on 192.168.200.1 at 2018-11-06 11:09:27.232626 
+Scan completed at 2018-11-06 11:12:37.628803
+PORT  STATE  SERVICE
+80    open   http
+443    open   https
+OS scan: Linux/UNIX/BSD
+Rev. DNS: gateway.ht.net
+```
+
 ## Installation 
 Make sure to have `scapy` fully installed and tested.
 ```
