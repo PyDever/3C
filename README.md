@@ -25,7 +25,7 @@ multi-threaded yet.
 
 ***New feature!*** (v2.2 update)
 3C can now access some basic Nmap functionality.
-```
+```python
 # from inside 3C folder
 import libnmap
 
