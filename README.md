@@ -23,19 +23,6 @@ $ python flood -t <victim IP> -p <port> -l <payload>
 It will take out a port in about 3-5 minutes. It is not 
 multi-threaded yet.
 
-***New feature!*** (v2.2 update)
-3C can now access some basic Nmap functionality.
-```python
-# from inside 3C folder
-import libnmap
-
-libnmap.ARP_dis() # discover hosts 
-
-# run OS-fingerprinting nmap SYN scan
-libnmap.SYN_scan(ports=<port range>, host=<target IP>, 
-    os_det=True, ttl=20, src='0.0.0.0')
-```
-
 ## Installation 
 Make sure to have `scapy` fully installed and tested.
 ```
