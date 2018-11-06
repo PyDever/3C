@@ -35,11 +35,6 @@ libnmap.ARP_dis() # discover hosts
 libnmap.SYN_scan(ports=<port range>, host=<target IP>, 
     os_det=True, ttl=20, src='0.0.0.0')
 ```
-On rooted mobile devices, run this for scan:
-```
-# run OS-fingerprinting nmap CONN scan
-libnmap.CONN_scan(ports=<port range>, host=<target IP>)
-```
 
 ## Installation 
 Make sure to have `scapy` fully installed and tested.
