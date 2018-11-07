@@ -24,8 +24,7 @@ $ python poison -t <victim IP> -m <victim MAC>
 ```
 $ python flood -t <victim IP> -p <port> -l <payload>
 ```
-It will take out a port in about 3-5 minutes. It is not 
-multi-threaded yet.
+It will take out a port in about 3-5 minutes.
 
 ### (v2.1 update)
 
@@ -47,8 +46,8 @@ Rev. DNS: gateway.ht.net
 ```
 
 ***New feature!***
-3C can now perform multi-threaded SYN flood DoS attacks.
-Refer to v2.0 update for details on the `flood` comman.
+`flood` is now multi-threaded. Refer to v2.0 update
+for details on how to use it.
 
 ## Installation 
 Make sure to have `scapy` fully installed and tested.
