@@ -8,7 +8,7 @@
 
 ***All included scripts are illegal to run without permission of target.***
 
-3C gives you an arsenal of Wi-Fi tools to perform DDoS, ARP poisons, and more. 
+3C gives you an arsenal of Wi-Fi tools to perform DoS, ARP poisons, and more. 
 ```
 $ python scan -r <IP range>
 ```
