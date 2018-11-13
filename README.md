@@ -49,6 +49,16 @@ Rev. DNS: gateway.ht.net
 `flood` is now multi-threaded. Refer to v2.0 update
 for details on how to use it.
 
+### (v3.0 update) ###
+
+***New feature!***
+3C can now perform detailed packet sniffs on local area network traffic.
+```
+$ python watch -f <protocol> -n <count> --dump <hex?>
+```
+the `--dump` or `-d` flag should be set to `1` if you wish to view
+the data in the packet if any, or `0` if not. 
+
 ## Installation 
 Make sure to have `scapy` fully installed and tested.
 ```
